@@ -52,4 +52,34 @@ I just want to emphasize some common recommendations from the 2 guides.
 3. When you are done upgrading, try to sell the spare parts you have.
 
 ## Trackpad Fixing on Windows
-When you replace the default trackpad with the 3 button trackpad from the T450, you need to modify some files so that the buttons will work. If you Hackintosh, the kext I provide in my repo listed above will enable the 3 buttons.
+When you replace the default trackpad with the 3 button trackpad from the T450, you need to modify some files so that the buttons will work. Here is how to get your 3 button trackpad working. If you Hackintosh, the kext I provide in my repo listed above will enable the 3 buttons.
+
+1. Disable Windows 10 Automatic Driver Updates
+2. Install the T450 Synaptics Driver in a T440/T440p
+
+### Disable Windows 10 Automatic Driver Updates
+1. Open *Device Manager*
+2. Go to *Mice and Pointing Devices* and select *Synaptics Pointing Device*
+3. Open the *Properties* go to the *Details* tab and choose *Hardware Ids*
+4. Write the Hardware Ids to a notepad.
+   - The hardware Ids I copied were the following:
+      - ACPI\VEN_LEN&DEV_0036
+      - ACPI\LEN0036
+      - *LEN0036
+5. Open *gpedit.msc*
+6. Go to `Computer Configuration > Administrative Templates > System > Device Installation > Device Installation Restrictions.`
+7. Go to *Prevent Installation of devices that match any of these device instance IDs*
+8. Select *Enabled*
+9. Under the *Options* panel, press *Show*
+10. Paste the Hardware Ids from the notepad and Apply.
+
+### Install the T450 Synaptics Driver in a T440/T440p
+1. Download the T450 touchpad driver from the [Lenovo website](https://pcsupport.lenovo.com/nl/en/products/laptops-and-netbooks/thinkpad-t-series-laptops/thinkpad-t450/downloads/ds104007). Do not install yet.
+2. Go to `Control Panel > Programs and Uninstall` your current Synaptics/Alps drivers.
+3. Reboot
+4. Open the driver package you just downloaded but *uncheck* the option to *Install Now*
+5. It will unpack to `C:\DRIVERS\Win\UNAV`
+6. Go to C:\DRIVERS\Win\UNAV\WinWDF\X64\SynPD.inf for 64-bit (or X86\SynPD.inf for 32-bit)
+Edit SynPD.inf: Find and delete all lines with LEN0036 in it. Find all lines with LEN200E and change LEN200E into LEN0036. Save the file. LEN0036 is the T440 hardware ID for both clunkpad and touchpad+buttons. LEN200E is the T450 hardware ID for the touchpad+buttons.
+Go to C:\DRIVERS\Win\UNAV and doubleclick on Setup.exe. When Windows complains about unsigned stuff, click on Install anyway.
+7. Reboot

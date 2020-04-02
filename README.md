@@ -44,9 +44,12 @@ For Corebooting, visit the [official documentation](https://doc.coreboot.org/mai
 The 2 guides above are really all you need. If you need a more visual walkthrough, there are several videos on YouTube about the topic.
 
 ## Recommendations
-I just want to emphasize some common recommendations from the 2 guides
+I just want to emphasize some common recommendations from the 2 guides.
 
 1. If you are going to replace the Optical drive with an SSD, please use a high quality adapter as the generic ones will eventually have trouble connecting the drive after a few reboots. I have personally experienced this.
 2. If you are going to replace the trackpad, then use a genuine Synaptics trackpad and not an ALPs or fake Synaptic trackpad as those are probably ALPs in disguise. Using a Synaptics trackpad will help save you headaches especially if you want to Hackintosh your laptop.
 3. Try to get a faster charger if you get the panel replacement as the higher resolution and nits will warrent more energy usage. Downside will be an even heavier charger.
 3. When you are done upgrading, try to sell the spare parts you have.
+
+## Trackpad Fixing on Windows
+When you replace the default trackpad with the 3 button trackpad from the T450, you need to modify some files so that the buttons will work.

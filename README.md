@@ -53,5 +53,3 @@ I just want to emphasize some common recommendations from the 2 guides.
 
 ## Trackpad Fixing on Windows
 When you replace the default trackpad with the 3 button trackpad from the T450, you need to modify some files so that the buttons will work. If you Hackintosh, the kext I provide in my repo listed above will enable the 3 buttons.
-
-

@@ -11,7 +11,7 @@ The T440p is a highly modifyable laptop. It is an excellent laptop one can get f
 - Superb key travel. (Thinkpads have the best keyboards of any laptop.)
 - Thinkpads are just cool.
 
-**Reasons not to get a Thinkpad T440p:**
+**Reasons not to get a Thinkpad T440p:**a
 - Depending on the price you find one, it may actually be better to get a newer laptop.
 - No Thunderbolt (Sucks especially if you want to use a portable monitor)
 - Heavy and thick.

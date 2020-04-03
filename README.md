@@ -12,7 +12,7 @@ The T440p is a highly modifyable laptop. It is an excellent laptop one can get f
 - Thinkpads are just cool.
 
 **Reasons not to get a Thinkpad T440p:**a
-- Depending on the price you find one, it may actually be better to get a newer laptop.
+- **Depending on the price you find one, it may actually be better to get a newer laptop.**
 - No Thunderbolt (Sucks especially if you want to use a portable monitor)
 - Heavy and thick.
    - No getting around the weight and thickness. Eventually you'll get tired of having to lug around something like this if you walk with it everywhere. Newer laptops have gotten much thinner.
@@ -24,7 +24,7 @@ The T440p is a highly modifyable laptop. It is an excellent laptop one can get f
 The mods in **bold** are the most important to me. You'll be surprised as to what you can do and how easily you can do them, even the panel replacement which is the most surprising.
 
 ### Mods
-- **CPU Replacement (Replace with the i7-4810mq)**
+- **CPU Replacement (Unsoldered, socketed unlike almost all laptop CPUs. Replace with the i7-4810mq)**
 - **Upgradable RAM up to 16GB (Thank goodness for unsoldered RAM)**
 - **Replacable SATA drive (SSD)**
 - **Hackintoshable (Easy to do. I personally done this and have a [repo about a T440P Hackintosh](https://github.com/NawalJAhmed/T440p-Hackintosh).)**

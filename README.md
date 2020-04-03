@@ -79,3 +79,6 @@ When you replace the default trackpad with the 3 button trackpad from the T450, 
 3. Download the [T450 touchpad drivers](http://driverdl.lenovo.com.cn/think/download/driver/7448/UltraNav[n10gx25w].exe).
 4. Install.
 5. Reboot.
+
+### Battery
+I just wanted to state that on a new 9 cell battery, I get about 5 hours full brightness, no video playing. I don't know how long the battery life would be with low brightness or playing constant video.
